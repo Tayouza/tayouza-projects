@@ -1,0 +1,623 @@
+/* configuração geral*/
+
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width           : 100%;
+    height          : 100%;
+    background-color: #ECF0F1;
+}
+
+.container-custom {
+    padding: 0 2%;
+    margin : 0 auto;
+}
+
+/* topo */
+
+header {
+    width           : 100%;
+    height          : 100px;
+    background-color: #3498DB;
+    display         : flex;
+    justify-content : space-around;
+    align-items     : center;
+}
+
+.menu-hamburger {
+    cursor: pointer;
+}
+
+.menu-hamburger a {
+    padding: 20px 40px;
+}
+
+.menu-hamburger span {
+    display         : block;
+    width           : 35px;
+    height          : 4px;
+    background-color: #2C3E50;
+    border-radius   : 5px;
+    margin-bottom   : 7px;
+}
+
+.dropdown-toggle::after{
+    content: none;
+}
+
+.show{
+    transform: none !important;
+}
+
+.titulo-logo {
+    display   : flex;
+    align-self: flex-end;
+    position  : relative;
+    gap       : 50px;
+}
+
+.background-logo {
+    width                  : 180px;
+    height                 : 100px;
+    background-color       : #2C3E50;
+    border-top-left-radius : 3px;
+    border-top-right-radius: 3px;
+    position               : absolute;
+    top                    : -5px;
+    left                   : -15px;
+    transform              : rotate(7deg);
+}
+
+.logo {
+    display: flex;
+    z-index: 1;
+}
+
+.logo h1 {
+    font-size    : 50px;
+    margin-bottom: 0;
+}
+
+.titulo-logo h1 a {
+    text-decoration: none;
+    color          : #ECF0F1;
+}
+
+.slogan {
+    color     : #ECF0F1;
+    margin-top: 10px;
+}
+
+.redes-sociais {
+    width          : 200px;
+    display        : flex;
+    justify-content: space-between;
+}
+
+.redes-sociais button {
+    width           : 80px;
+    background-color: #ECF0F1;
+    border          : 0;
+    border-radius   : 5px;
+    box-shadow      : 0 0 3px 3px #0002;
+    padding         : 5px;
+    font-size       : 13px;
+}
+
+.redes-sociais button i {
+    margin-right: 4px;
+}
+
+.redes-sociais button:nth-of-type(1) {
+    color: #0a4064;
+}
+
+.redes-sociais button:nth-of-type(2) {
+    color: #288fd4;
+}
+
+/*  carrousel  */
+
+.carousel-section {
+    background-color: #ECF0F1;
+    position        : relative;
+    z-index         : 2;
+    width           : 100%;
+    padding         : 50px;
+}
+
+/* adaptar carousel do bootstrap */
+
+.carousel-item {
+    height: 450px;
+}
+
+.carousel-item img {
+    height    : 450px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position      : absolute;
+    right         : 0;
+    bottom        : 0;
+    left          : 0;
+    z-index       : 10;
+    padding-top   : 20px;
+    padding-bottom: 20px;
+    color         : #fff;
+    text-align    : center
+}
+
+.carousel-caption h5 {
+    position        : absolute;
+    top             : -70px;
+    left            : 0;
+    background-color: #3498DB;
+    padding         : 5px;
+    padding-left    : 20px;
+    font-size       : 14px;
+    font-weight     : bold;
+    width           : 300px;
+    text-align      : left;
+}
+
+.carousel-caption p {
+    position   : absolute;
+    left       : 15px;
+    top        : -40px;
+    font-size  : 24px;
+    font-weight: bold;
+    width      : 500px;
+    text-align : left;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    background-color: #fff;
+    box-shadow      : 0 0 5px 5px #0001;
+    position        : absolute;
+    top             : 50%;
+    bottom          : 0;
+    z-index         : 1;
+    display         : -ms-flexbox;
+    display         : flex;
+    -ms-flex-align  : center;
+    align-items     : center;
+    -ms-flex-pack   : center;
+    justify-content : center;
+    width           : 50px;
+    height          : 50px;
+    border-radius   : 50%;
+    color           : #121212;
+    text-align      : center;
+    opacity         : 1;
+    transition      : opacity .15s ease
+}
+
+@media (prefers-reduced-motion:reduce) {
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        transition: none
+    }
+}
+
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+    color          : #fff;
+    text-decoration: none;
+    outline        : 0;
+    opacity        : 1
+}
+
+.carousel-control-prev {
+    left: -25px
+}
+
+.carousel-control-next {
+    right: -25px
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display   : inline-block;
+    width     : 20px;
+    height    : 20px;
+    background: 50%/100% 100% no-repeat
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%232C3E50' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e")
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%232C3E50' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e")
+}
+
+.carousel-indicators {
+    position       : absolute;
+    right          : 0;
+    bottom         : -50px;
+    left           : 0;
+    z-index        : 15;
+    display        : -ms-flexbox;
+    display        : flex;
+    -ms-flex-pack  : center;
+    justify-content: center;
+    padding-left   : 0;
+    margin-right   : 15%;
+    margin-left    : 15%;
+    list-style     : none
+}
+
+.carousel-indicators li {
+    width           : 10px !important;
+    height          : 10px !important;
+    border-radius   : 50%;
+    background-color: #0005;
+    opacity         : 1;
+}
+
+.carousel-indicators .active {
+    background-color: #00a5e4;
+}
+
+/* Top Cacilds highlights*/
+
+.highlights h2 {
+    font-size: 24px;
+    color    : #2C3E50;
+}
+
+.trends {
+    display: flex;
+    gap    : 25px;
+}
+
+.trend {
+    position: relative;
+    cursor  : pointer;
+}
+
+.trend img {
+    width: 100%;
+}
+
+.trend span {
+    position        : absolute;
+    background-color: #E74C3C;
+    left            : 0;
+    bottom          : 20px;
+    color           : #ECF0F1;
+    padding         : 5px 15px;
+    font-size       : 14px;
+}
+
+/* ultimas-materias */
+
+.ultimas-materias {
+    margin-top: 50px;
+}
+
+.ultimas-materias h2 {
+    font-size: 24px;
+    color    : #2C3E50;
+}
+
+.pacote-materias {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap                  : 25px;
+}
+
+.materia {
+    border-bottom: 1px solid #ccc;
+}
+
+.materia img {
+    width     : 100%;
+    height    : 190px;
+    object-fit: cover;
+}
+
+.publi {
+    grid-row   : 1 / 3;
+    grid-column: 3;
+    position   : relative;
+    max-width  : 300px;
+}
+
+.publi span {
+    position : absolute;
+    right    : 0;
+    top      : -20px;
+    font-size: 14px;
+    color    : #888;
+}
+
+/* outras materias */
+
+.outras-materias {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin               : 50px 0 250px;
+    gap                  : 25px;
+}
+
+.mais-noticias {
+    width    : 100%;
+    max-width: 320px;
+}
+
+.outras-materias .mais-noticias h2 {
+    color: #3498DB;
+}
+
+.mais-noticias li {
+    margin       : 5px 0;
+    padding      : 15px 0;
+    border-bottom: 1px solid #ccc;
+    font-size    : 14px;
+    text-align   : justify;
+}
+
+.outras-materias h2 {
+    font-size: 24px;
+    color    : #E74C3C;
+}
+
+.outras-materias ul {
+    list-style: none;
+}
+
+.cards {
+    width         : 100%;
+    display       : flex;
+    flex-direction: column;
+    gap           : 20px;
+}
+
+.card-custom {
+    display         : flex;
+    flex-direction  : row;
+    border          : 0;
+    background-color: #f1f1f1;
+    gap             : 10px;
+}
+
+.card-body-custom {
+    margin-top: 10px;
+}
+
+.card-body-custom h5 {
+    color    : #E74C3C;
+    font-size: 14px;
+}
+
+.card-body-custom p {
+    width    : 80%;
+    color    : #2C3E50;
+    font-size: 16px;
+}
+
+.publi2 {
+    display: none;
+}
+
+/* footer */
+
+footer {
+    width         : 100%;
+    display       : flex;
+    flex-direction: column;
+}
+
+#voltar-topo {
+    width           : 100%;
+    background-color: #3498DB;
+    padding         : 10px;
+    cursor          : pointer;
+    display         : flex;
+    justify-content : flex-end;
+}
+
+#voltar-topo span {
+    color: #ECF0F1;
+}
+
+
+
+.direitos {
+    width           : 100%;
+    height          : 100px;
+    background-color: #2b3e4e;
+    display         : grid;
+    place-items     : center;
+    color           : #ECF0F1;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .container,
+    .container-custom {
+        padding  : 0 2%;
+        max-width: none;
+    }
+
+    .redes-sociais {
+        width: 90px;
+    }
+
+    .redes-sociais button {
+        width: 35px;
+    }
+
+    .redes-sociais button i {
+        margin: 0;
+    }
+
+    .redes-sociais span {
+        display: none;
+    }
+
+    /* Não deixar de mostrar o texto do caroulsel */
+
+    .carousel-section {
+        padding: 20px;
+    }
+
+    .carousel-caption h5 {
+        top: -70px;
+    }
+
+    .carousel-caption p {
+        top: -40px;
+    }
+
+    .pacote-materias {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pacote-materias .publi {
+        display: none;
+    }
+
+    .outras-materias {
+        grid-template-columns: 1fr 1fr;
+        row-gap              : 70px;
+    }
+
+    .publi2 {
+        display  : block;
+        max-width: 300px;
+    }
+
+    .publi2 img {
+        width: 100%;
+    }
+
+    footer.container {
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .carousel-section {
+        padding: 10px;
+    }
+
+    .carousel-item {
+        height       : 250px;
+        margin-bottom: 100px;
+    }
+
+    .carousel-item img {
+        height    : 250px;
+        object-fit: cover;
+    }
+
+    .carousel-caption h5 {
+        top: -35px;
+    }
+
+    .carousel-caption p {
+        top      : 65px;
+        font-size: 18px;
+        color    : #121212;
+
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        top   : 25%;
+        width : 30px;
+        height: 30px;
+    }
+
+    .carousel-control-prev {
+        left: 5px;
+    }
+
+    .carousel-control-next {
+        right: 5px;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width : 10px;
+        height: 10px;
+    }
+
+    .carousel-indicators {
+        bottom: -20px;
+    }
+
+
+}
+
+@media screen and (max-width: 650px) {
+
+    header .slogan,
+    header .redes-sociais {
+        display: none;
+    }
+
+    header.container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    header nav{
+        padding-left: 1%;
+    }
+
+    header .titulo-logo{
+        justify-self: center;
+    }
+
+    .trends{
+        flex-direction: column;
+    }
+
+    .pacote-materias{
+        grid-template-columns: 1fr;
+    }
+
+    .outras-materias{
+        grid-template-columns: 1fr;
+    }
+
+    .publi2{
+        max-width: none;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .publi2 .publi{
+        position: static;
+        max-width: none;
+        display: grid;
+        max-width: 230px;
+        grid-row: auto;
+        grid-column: auto;
+        place-self: center;
+    }
+
+    .publi2 .publi span{
+        position: static;
+        justify-self: flex-end;
+    }
+
+}

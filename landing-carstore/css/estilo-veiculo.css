@@ -1,0 +1,122 @@
+section.venda-simples .container p {
+    text-align: justify;
+}
+
+section.venda-simples .container {
+    padding: 40px 10px 0;
+    max-width: 1000px;
+}
+
+.info-veiculo {
+    float: left;
+    width: 60%;
+}
+
+.lista-historia {
+    text-align: left;
+}
+
+.lista-historia a {
+    text-decoration: none;
+    color: black;
+}
+
+.lista-historia a:last-child {
+    color: tomato;
+}
+
+.descricao-veiculo {
+    float: left;
+    width: calc(40% - 20px);
+    margin-left: 20px;
+}
+
+.descricao-veiculo .botao1 {
+    width: 235px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.foto-destaque {
+    width: 100%;
+    padding-top: 70%;
+    background-position: center;
+    background-size: cover;
+}
+
+.galeria {
+    width: 100%;
+    padding: 36px;
+    position: relative;
+}
+
+.nav-galeria {
+    width: 100%;
+    overflow: hidden;
+}
+
+.seta-esquerda,
+.seta-direita {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-size: 100% 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.seta-direita {
+    background-image: url(../imagens/arrow-right.png);
+    right: 8px;
+}
+
+.seta-esquerda {
+    background-image: url(../imagens/arrow-left.png);
+    left: 8px;
+}
+
+.img-pacote {
+    float: left;
+    padding: 9px;
+    /* VIA JS */
+}
+
+.mini-img {
+    float: left;
+    width: 100%;
+    padding-top: 70%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+section.contato {
+    padding: 40px 10px 0;
+}
+
+section.veiculos-destaque {
+    padding: 40px 10px;
+}
+
+@media screen and (max-width: 540px) {
+    section.venda-simples .container {
+        text-align: center;
+    }
+
+    section.venda-simples .container a {
+        width: 235px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .info-veiculo {
+        float: none;
+        width: 100%;
+    }
+
+    .descricao-veiculo {
+        float: none;
+        width: 100%;
+        margin-left: 0px;
+    }
+}

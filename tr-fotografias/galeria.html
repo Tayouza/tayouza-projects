@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estiloGaleria.css">
+    <link rel="stylesheet" href="estilos/estilojanelacontato.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Galeria de fotos</title>
+</head>
+
+<body>
+    <header id="menuTopo" style="position: fixed; top: 0; left: 0;">
+        <div class="container">
+            <div id="topo">
+                <div id="contLogo">
+                    <a href="index.html">
+                        <div id="logo"></div>
+                    </a>
+                </div>
+                <div class="menu-hamburguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Portifólio</a></li>
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li><a class="contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <nav id="menu-mobile">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Portifólio</a></li>
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li><a class="contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--topo-->
+        </div>
+        <!--container-->
+    </header>
+    <div class="container">
+        <h2>Tayouza e Ruth</h2>
+        <div class="galeria">
+            <div class="img-wrapper">
+                <img src="images/01.jpg">
+            </div>
+            <!--img-wrapper-->
+            <div class="img-wrapper">
+                <img src="images/02.jpg">
+            </div>
+            <!--img-wrapper-->
+            <div class="img-wrapper">
+                <img src="images/03.jpg">
+            </div>
+            <!--img-wrapper-->
+            <div class="img-wrapper">
+                <img src="images/04.jpg">
+            </div>
+            <!--img-wrapper-->
+            <div class="img-wrapper">
+                <img src="images/05.jpg">
+            </div>
+            <!--img-wrapper-->
+            <div class="img-wrapper">
+                <img src="images/06.jpg">
+            </div>
+            <!--img-wrapper-->
+        </div>
+        <!--galeria-->
+    </div>
+    <!--container-->
+    <div class="bg"></div>
+    <div class="botoes">
+        <div class="fechar">X</div>
+        <div class="setaEsquerda">&lt;</div>
+        <div class="setaDireita">&gt;</div>
+    </div>
+
+    <div id="janelaContato">
+        <form>
+            <h2>Contato</h2>
+            <input type="text" id="nome" placeholder="Nome completo" required>
+            <input type="text" id="telefone" placeholder="Telefone/Whatsapp" required>
+            <textarea id="mensagem" placeholder="Mensagem... " required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/scriptGaleria.js"></script>
+    <script src="js/scriptMenu.js"></script>
+    <script src="js/scriptcontato.js"></script>
+    <script src="js/jquery.mask.js"></script>
+
+</body>
+
+</html>

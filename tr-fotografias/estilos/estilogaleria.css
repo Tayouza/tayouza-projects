@@ -1,0 +1,121 @@
+@import url(estiloTopo.css);
+/*
+
+Conteudo
+
+*/
+
+
+h2 {
+    color     : #f0f0f0;
+    text-align: center;
+    margin    : 120px 0 20px;
+}
+
+
+.galeria {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap                  : 10px;
+    width                : 100%;
+    padding              : 0 80px;
+}
+
+img {
+    width : 100%;
+    cursor: pointer;
+}
+
+.imgFull {
+    max-width : 600px;
+    width     : 94%;
+    height    : 94%;
+    padding   : 25px;
+    position  : absolute;
+    top       : 50%;
+    left      : 50%;
+    transform : translate(-50%, -50%);
+    z-index   : 2;
+    cursor    : auto;
+    object-fit: contain;
+}
+
+.bg {
+    display   : none;
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    width     : 100%;
+    background: #00000055;
+    z-index   : 1;
+}
+
+.botoes {
+    display: none;
+}
+
+.fechar {
+    width           : 50px;
+    height          : 50px;
+    border-radius   : 50%;
+    background-color: #00000055;
+    text-align      : center;
+    font-size       : 32px;
+    font-family     : Arial, Helvetica, sans-serif;
+    color           : #f0f0f0dd;
+    padding-top     : 7px;
+    cursor          : pointer;
+    position        : absolute;
+    top             : 20px;
+    right           : 20px;
+    z-index         : 3;
+}
+
+.setaEsquerda {
+    width           : 50px;
+    height          : 50px;
+    border-radius   : 50%;
+    background-color: #00000055;
+    text-align      : center;
+    font-size       : 32px;
+    font-family     : Arial, Helvetica, sans-serif;
+    color           : #f0f0f0dd;
+    padding-top     : 7px;
+    cursor          : pointer;
+    position        : absolute;
+    top             : 50%;
+    left            : 10%;
+    z-index         : 3;
+}
+
+.setaDireita {
+    width           : 50px;
+    height          : 50px;
+    border-radius   : 50%;
+    background-color: #00000055;
+    text-align      : center;
+    font-size       : 32px;
+    font-family     : Arial, Helvetica, sans-serif;
+    color           : #f0f0f0dd;
+    padding-top     : 7px;
+    cursor          : pointer;
+    position        : absolute;
+    top             : 50%;
+    right           : 10%;
+    z-index         : 3;
+}
+
+@media screen and (max-width: 750px) {
+    .setaEsquerda {
+        left: 1vw;
+    }
+
+    .setaDireita {
+        right: 1vw;
+    }
+
+
+    .galeria {
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,48 @@
+section.sobre .container {
+    padding: 2%;
+    max-width: 800px;
+}
+
+section.sobre .container .img-sobre {
+    width: 100%;
+    padding-top: 50%;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+
+section.sobre .container .descricao-equipe {
+    margin: 10px 0 30px;
+}
+
+section.sobre .container .descricao-equipe p, section.sobre .container .descricao-autor p {
+    text-align: justify;
+}
+
+section.sobre .container .descricao-equipe span {
+    font-style: italic;
+    font-weight: 100;
+}
+
+.img-autor{
+    width: 200px;
+    padding-top: 200px;
+    background-color: #ccc;
+    display: inline-block;
+}
+
+.descricao-autor{
+    display: inline-block;
+    width: 558px;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 540px){
+    .img-autor{
+        display: block;
+        margin: 0 auto;
+    }
+    .descricao-autor{
+        display: block;
+        width: 100%;
+    }
+}

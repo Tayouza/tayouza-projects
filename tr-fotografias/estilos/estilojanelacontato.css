@@ -1,0 +1,90 @@
+#janelaContato {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 370px;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translate(-50%, -50%);
+    background-color: #252525;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+#janelaContato span{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(139, 22, 22);
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #f0f0f0;
+}
+
+#janelaContato form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#janelaContato h2,
+#janelaContato input,
+#janelaContato textarea {
+    width: 90%;
+    padding: 5px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #f0f0f0;
+    color: #252525;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+#janelaContato input::placeholder,
+#janelaContato textarea::placeholder{
+    color: #252525;
+}
+
+#janelaContato h2 {
+    border: 0;
+    text-align: center;
+    font-size: 36px;
+    font-variant: small-caps;
+    color: #f0f0f0;
+}
+
+#janelaContato textarea {
+    height: 100px;
+    resize: none;
+}
+
+#janelaContato input[type=submit]{
+    width: 96px;
+    height: 40px;
+    background-color: #8c5;
+    border: 0;
+    color: #f0f0f0;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.bg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000055;
+    z-index: 1;
+}

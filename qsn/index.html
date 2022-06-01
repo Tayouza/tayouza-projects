@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/loader.css">
+    <title>QSN</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <h1>QSN</h1>
+            </a>
+            <img src="assets/boxQuestion.png" alt="">
+        </div>
+    </header>
+
+    <div class="qsn">
+        <h2>
+            Qual <br> o seu <br> nome?
+        </h2>
+    </div>
+
+    <div class="pesquisa">
+        <form>
+            <input type="text" name="name" id="name" minlength="2" required autofocus>
+            <input type="submit" value="Descobrir" id="descobrir">
+        </form>
+    </div>
+
+    <div class="container-chart">        
+        <div class="container" id="chartsName">
+            <h2 id="displayName" class="displayChart"></h2>
+            <canvas id="chartName" class="classCharts"></canvas>
+            <h2 id="displaySecondName" class="displayChart"></h2>
+            <canvas id="chartSecondName" class="classCharts"></canvas>
+        </div>
+    </div>
+
+    <div style="height: 200px;">
+
+    </div>
+
+
+    <div id="modal">
+        <div class="containerLoad">
+            <div class="loader">
+                <svg viewBox="0 0 80 80">
+                    <circle id="test" cx="40" cy="40" r="32"></circle>
+                </svg>
+            </div>
+
+            <div class="loader triangle">
+                <svg viewBox="0 0 86 80">
+                    <polygon points="43 8 79 72 7 72"></polygon>
+                </svg>
+            </div>
+
+            <div class="loader">
+                <svg viewBox="0 0 80 80">
+                    <rect x="8" y="8" width="64" height="64"></rect>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer style="display: none;">
+        <p>Duvidas: A API não considera o uso de sinais diacríticos, de forma que Antônio e Antonio são contabilizados
+            como Antonio.</p>
+    </footer>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/sweetalert.min.js"></script>
+    <script src="scripts/chartjs.min.js"></script>
+    <script src="scripts/scriptChart.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

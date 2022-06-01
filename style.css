@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #444;
+}
+
+span {
+    font-size: 3em;
+    color: #ebcb62;
+    background: #444;
+    display: table-cell;
+    padding: 0 15px;
+    line-height: 100px;
+    animation: jumb 2s infinite;
+}
+
+@keyframes jumb {
+    0% {
+        transform: translateY(0px)
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px)
+    }
+}
+
+h1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: .1s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: .2s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: .3s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: .2s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: .1s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: .0s;
+}
+
+h4 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+h4 span:nth-child(2) {
+    animation-delay: .1s;
+}
+
+h4 span:nth-child(3) {
+    animation-delay: .2s;
+}
+
+h4 span:nth-child(4) {
+    animation-delay: .3s;
+}
+
+h4 span:nth-child(5) {
+    animation-delay: .3s;
+}
+
+h4 span:nth-child(6) {
+    animation-delay: .2s;
+}
+
+h4 span:nth-child(7) {
+    animation-delay: .1s;
+}
+
+h4 span:nth-child(8) {
+    animation-delay: .0s;
+}

@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.colors{
+    --color1: #405815;
+    --color2: #93a605;
+    --color3: #f28803;
+    --color4: #f25c04;
+    --color5: #e6effa;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background-color: #93a60544;
+}
+
+.titulo{
+    width: 100%;
+    text-align: center;
+}
+
+h2{
+    font-size: 36px;
+    font-family: 'Helvetica';
+}
+
+a{
+    text-decoration: none;
+    color: #405815;
+}
+
+#btn-add{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #e6effa;
+    border: 0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 10px #0005;
+}
+
+#btn-add::after{
+    content: '+';
+    font-weight: 500;
+    font-size: 45px;
+    color: #121212;
+    font-family: 'Rubik';
+    padding-bottom: 3px;
+}
+
+#container-anotacoes{
+    max-width: 1500px;
+    padding: 0 2%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.text{
+    background-color: #f2880355;
+    resize: none;
+    width: 100%;
+    min-width: 200px;
+    height: 100px;
+    border: 1px solid #f28803;
+    padding-top: 15px;
+}
+
+.date{
+    position: absolute;
+    top: 12px;
+    left: 2px;
+    font-size: 10px;
+    color: #444;
+}
+
+.text:focus{
+    outline: 1px solid #f25c04;
+}
+
+.anotacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    margin: 10px 0;
+    max-width: 300px;
+    width: 100%;
+}
+
+.anotacao div:nth-of-type(1){    
+    position: relative;
+    width: 100%;
+}
+
+.btn-delete{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.btn-delete::after{
+    content: 'x';
+    font-weight: 500;
+    font-size: 18px;
+    color: #e6effa;
+    font-family: 'Rubik';
+    padding-bottom: 3px;
+}

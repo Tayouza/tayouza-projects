@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estiloIndex.css">
+    <link rel="stylesheet" href="estilos/estiloAside.css">
+    <link rel="stylesheet" href="estilos/estilojanelacontato.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>TR Fotografia</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="topo">
+                <div id="contLogo">
+                    <a href="../index.html">
+                        <div id="logo"></div>
+                    </a>
+                </div>
+                <div class="menu-hamburguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#topo">Home</a></li>
+                        <li><a href="galeria.html">Portifólio</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a class="contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <nav id="menu-mobile">
+                    <ul>
+                        <li><a href="#topo">Home</a></li>
+                        <li><a href="galeria.html">Portifólio</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a class="contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--topo-->
+        </div>
+        <!--container-->
+    </header>
+
+    <section id="slideFotos"></section>
+
+    <section id="asideArtigos">
+        <aside>
+            <div id="menuLateral">
+                <h1>TR Fotografias</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#topo">Home</a></li>
+                        <li><a href="galeria.html">Portifólio</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a class="contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--menuLateral-->
+        </aside>
+
+        <div id="imgPerfil"></div>
+
+        <section id="artigos">
+            <section id="sobre">
+                <div id="imgSobre"></div>
+                <div id="descricao">
+                    <article id="taylorSobre">
+                        <div class="imgPerfilSobre" style="background-image: url('images/autor.jpg');"></div>
+                        <div class="textoSobre">
+                            <h2>Taylor Souza</h2>
+                            <p><em>Fotógrafo & Desenvolvedor</em></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis deleniti magnam autem,
+                                ipsum, necessitatibus adipisci voluptate voluptas magni repudiandae consequatur
+                                aspernatur
+                                dignissimos doloribus illum facere iure voluptatem temporibus cumque quis? Lorem ipsum
+                                dolor
+                                sit amet consectetur adipisicing elit. Voluptates modi distinctio asperiores eligendi
+                                iusto
+                                dolorem ipsam fugit inventore accusantium exercitationem debitis assumenda incidunt
+                                facilis
+                                unde magni doloremque eum, quam porro?Lorem ipsum dolor sit amet consectetur,
+                                adipisicing
+                                elit. Enim voluptate distinctio at eum, dolorem architecto aspernatur voluptates numquam
+                                temporibus accusamus deserunt sint maxime? Aliquid esse ipsam ut ab temporibus ipsum.
+                            </p>
+                        </div>
+                    </article>
+                    <article id="ruthSobre">
+                        <div class="imgPerfilSobre" style="background-image: url(images/designer.jpg)"></div>
+                        <div class="textoSobre">
+                            <h2>Ruth Lopes</h2>
+                            <p><em>Fotógrafa & Publicitária</em></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis deleniti magnam autem,
+                                ipsum, necessitatibus adipisci voluptate voluptas magni repudiandae consequatur
+                                aspernatur
+                                dignissimos doloribus illum facere iure voluptatem temporibus cumque quis? Lorem ipsum
+                                dolor
+                                sit amet consectetur adipisicing elit. Voluptates modi distinctio asperiores eligendi
+                                iusto
+                                dolorem ipsam fugit inventore accusantium exercitationem debitis assumenda incidunt
+                                facilis
+                                unde magni doloremque eum, quam porro?Lorem ipsum dolor sit amet consectetur,
+                                adipisicing
+                                elit. Enim voluptate distinctio at eum, dolorem architecto aspernatur voluptates numquam
+                                temporibus accusamus deserunt sint maxime? Aliquid esse ipsam ut ab temporibus ipsum.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <!--descricao-->
+            </section>
+            <!--Sobre-->
+            <section id="albuns">
+                <ul>
+                    <li><a href="#"><img src="images/01.jpg"></a></li>
+                    <li><a href="#"><img src="images/02.jpg"></a></li>
+                    <li><a href="#"><img src="images/03.jpg"></a></li>
+                    <li><a href="#"><img src="images/04.jpg"></a></li>
+                    <li><a href="#"><img src="images/05.jpg"></a></li>
+                    <li><a href="#"><img src="images/06.jpg"></a></li>
+                    <li><a href="#"><img src="images/slidefotos.jpg"></a></li>
+                </ul>
+            </section>
+            <!--albuns-->
+        </section>
+        <!--artigos-->
+    </section>
+    <!--asideArtigos-->
+
+
+    <footer>
+        <p>Tayouza Dev &copy;</p>
+    </footer>
+
+    <div class="bg"></div>
+    <div id="janelaContato">
+        <span id="btnFechar">X</span>
+        <form>
+            <h2>Contato</h2>
+            <input type="text" id="nome" placeholder="Nome completo" required>
+            <input type="text" id="telefone" placeholder="Telefone/Whatsapp" required>
+            <textarea id="mensagem" placeholder="Mensagem... " required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/scriptMenu.js"></script>
+    <script src="js/scriptcontato.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/hoverImagemBlur.js"></script>
+</body>
+
+</html>

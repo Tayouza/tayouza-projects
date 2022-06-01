@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+    margin     : 0;
+    padding    : 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a {
+    outline: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin   : 0 auto;
+}
+
+.limpar {
+    clear: both;
+}
+
+header .container {
+    padding: 0 40px;
+}
+
+header {
+    width              : 100%;
+    height             : 75vh;
+    min-height         : 500px;
+    max-height       : 650px;
+    padding            : 40px 0px;
+    background-image   : url('../imagens/capa.png');
+    background-size    : cover;
+    background-position: center;
+}
+
+header .logo {
+    float    : left;
+    width    : 180px;
+    height   : 40px;
+    font-size: 22px;
+}
+
+.logo a {
+    text-decoration: none;
+    color          : white;
+    font-weight    : bold;
+}
+
+.logo a:hover {
+    color: #ccc;
+}
+
+#menu {
+    float: right;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu li:last-of-type {
+    margin-right: 0;
+}
+
+#menu li {
+    display     : inline-block;
+    margin-right: 20px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color          : white;
+}
+
+#menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Icon menu hemburguer */
+
+#menu-hamburguer {
+    display   : none;
+    width     : 38px;
+    height    : 26px;
+    position  : relative;
+    float     : right;
+    transform : rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor    : pointer;
+}
+
+#menu-hamburguer span {
+    display      : block;
+    position     : absolute;
+    height       : 6px;
+    width        : 100%;
+    background   : white;
+    border-radius: 9px;
+    opacity      : 1;
+    left         : 0;
+    transform    : rotate(0deg);
+    transition   : .25s ease-in-out;
+}
+
+#menu-hamburguer span:nth-child(1) {
+    top: 0px;
+}
+
+#menu-hamburguer span:nth-child(2),
+#menu-hamburguer span:nth-child(3) {
+    top: 12px;
+}
+
+#menu-hamburguer span:nth-child(4) {
+    top: 24px;
+}
+
+#menu-hamburguer.openBurguer span:nth-child(1) {
+    top  : 18px;
+    width: 0%;
+    left : 50%;
+}
+
+#menu-hamburguer.openBurguer span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+#menu-hamburguer.openBurguer span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+#menu-hamburguer.openBurguer span:nth-child(4) {
+    top  : 18px;
+    width: 0%;
+    left : 50%;
+}
+
+/* menu mobile*/
+
+#menu.openMenu ul {
+    background-color: #318;
+    position        : absolute;
+    width           : 100%;
+    left            : 0;
+    top             : 70px;
+    list-style-type : none;
+    text-align      : center;
+}
+
+#menu.openMenu ul li:hover {
+    background-color: #d86c07;
+    transition      : .3s;
+}
+
+#menu.openMenu ul li {
+    padding      : 8px 0;
+    border-bottom: 1px solid white;
+}
+
+#menu.openMenu ul li:last-child {
+    border-bottom: 0;
+}
+
+#menu.openMenu ul li a {
+    display        : block;
+    width          : 100vw;
+    color          : white;
+    text-decoration: none;
+}
+
+.chamada1 {
+    max-width  : 600px;
+    float      : right;
+    margin     : 150px 130px 0 0;
+    white-space: pre-line;
+}
+
+.chamada1 h2 {
+    font-size  : 35px;
+    color      : white;
+    font-weight: 300;
+}
+
+.chamada1 p {
+    color         : white;
+    letter-spacing: 1px;
+    margin-top    : -20px;
+}
+
+#home .container {
+    max-width: 950px;
+    height   : calc(100% + 30px);
+}
+
+#home {
+    width           : 100%;
+    height          : 320px;
+    background-color: #472562;
+}
+
+.texto-secao1 {
+    float   : left;
+    width   : 50%;
+    color   : white;
+    position: relative;
+    left    : 95px;
+    padding : 5% 10px;
+}
+
+.texto-secao1 h2 {
+    font-size: 28px;
+}
+
+.texto-secao1 p {
+    margin: 5px 0;
+}
+
+.texto-secao1 ul {
+    list-style-position: inside;
+}
+
+.texto-secao1 ul li {
+    margin-top: 5px;
+}
+
+.botao-secao1 {
+    padding         : 20px 40px;
+    background-color: #d3913a;
+    color           : white;
+    text-decoration : none;
+    position        : relative;
+    top             : 30px;
+    border-radius   : 50px;
+}
+
+.img-smart {
+    float            : right;
+    width            : 40%;
+    height           : 100%;
+    position         : relative;
+    top              : -30px;
+    right            : 50px;
+    background-image : url('../imagens/device.png');
+    background-repeat: no-repeat;
+    background-size  : 100% 100%;
+}
+
+#servicos {
+    padding         : 40px 20px 0;
+    background-color: white;
+    text-align      : center;
+}
+
+#servicos h2 {
+    color      : #472663;
+    font-weight: 300;
+}
+
+#servicos p {
+    margin-top: 30px;
+    max-width : 800px;
+    display   : inline-block;
+    text-align: justify;
+}
+
+#servicos img {
+    width        : 97%;
+    box-shadow   : 0px 3px 15px 5px #0000006b;
+    border-radius: 10px;
+    margin-top   : -120px;
+    position     : relative;
+    top          : 150px;
+}
+
+#sobre {
+    width: 100%;
+}
+
+#sobre .esquerda {
+    color           : white;
+    float           : left;
+    width           : 50%;
+    padding         : 170px 0 40px 0;
+    background-color: #835FA7;
+}
+
+#sobre .esquerda h2 {
+    font-weight: 300;
+    font-style : italic;
+    font-size  : 23px;
+}
+
+#sobre .esquerda p {
+    text-align : justify;
+    font-size  : 15px;
+    line-height: 35px;
+    margin-top : 10px;
+}
+
+.esquerda .pacote-esquerda {
+    width        : 70%;
+    float        : right;
+    padding-right: 35px;
+}
+
+#sobre .direita {
+    float           : right;
+    width           : 50%;
+    padding         : 170px 0 40px 0px;
+    background-color: white;
+}
+
+.scroll-equipe {
+    width       : 100%;
+    max-width   : 450px;
+    overflow    : hidden;
+    padding-left: 30px;
+}
+
+.carrossel-autor {
+    float    : left;
+    max-width: 500px;
+}
+
+.titulo-autor {
+    float: left;
+    width: 100%;
+}
+
+.titulo-autor p {
+    font-style: italic;
+    color     : #222;
+}
+
+.titulo-autor .pacote-titulo {
+    float: left;
+}
+
+.titulo-autor h2 {
+    margin-top : 10px;
+    color      : #222;
+    font-weight: 500;
+}
+
+.titulo-autor .img-autor {
+    float          : right;
+    width          : 60px;
+    height         : 60px;
+    border-radius  : 50%;
+    background-size: 100% 100%;
+    transform      : translateX(-50px);
+}
+
+.texto-autor p {
+    width: 85%;
+    text-align: justify;
+    margin-top: 5px;
+    color     : #222;
+}
+
+.bolinhas {
+    width  : 80%;
+    padding: 10px 30px 0;
+}
+
+.bolinhas span {
+    display         : inline-block;
+    width           : 16px;
+    height          : 16px;
+    border-radius   : 50%;
+    background-color: #ccc;
+    cursor          : pointer;
+    margin-right    : 10px;
+}
+
+#contato {
+    background-color: #472562;
+    padding         : 70px 0;
+}
+
+.form {
+    float    : left;
+    width    : 40%;
+    color    : white;
+    max-width: 460px;
+    padding  : 0 25px;
+}
+
+.form h2 {
+    font-size: 23px;
+}
+
+.form p {
+    font-size    : 15px;
+    text-align   : justify;
+    margin-bottom: 10px;
+}
+
+.form input[type=text] {
+    font-size    : 17px;
+    width        : 100%;
+    height       : 48px;
+    margin-bottom: 10px;
+    padding-left : 8px;
+    border       : 1px solid #c2c2c2;
+}
+
+.form textarea {
+    width       : 100%;
+    padding-left: 8px;
+    height      : 150px;
+    border      : 1px solid #c2c2c2;
+}
+
+.form input[type=submit] {
+    padding         : 15px 30px;
+    background-color: #d3913a;
+    color           : white;
+    margin-top      : 10px;
+    border          : none;
+    border-radius   : 50px;
+}
+
+.pacote-mapa {
+    float        : right;
+    width        : 40%;
+    color        : white;
+    padding-right: 40px;
+}
+
+.pacote-mapa h2 {
+    font-size    : 23px;
+    margin-bottom: 10px;
+}
+
+.container-mapa {
+    position : relative;
+    width    : 100%;
+    max-width: 400px;
+}
+
+.container-mapa2 {
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    width      : 100%;
+    padding-top: 100%;
+}
+
+.mapa {
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    background-color: white;
+    border          : 5px solid #aaa;
+}
+
+footer {
+    padding    : 40px 0;
+    background : #192123;
+    color      : white;
+    font-size  : 14px;
+    text-align : center;
+    line-height: 28px;
+}
+
+
+@media screen and (max-width: 810px) {
+    #menu.openMenu {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu {
+        float: none;
+    }
+
+    #menu ul {
+        list-style: none;
+    }
+
+    #menu li:last-of-type {
+        margin-right: 0;
+    }
+
+    #menu li {
+        display     : block;
+        margin-right: 0;
+    }
+
+    #menu li a {
+        text-decoration: none;
+        color          : white;
+    }
+
+    #menu li a:hover {
+        text-decoration: none;
+    }
+
+    .chamada1 {
+        text-align: center;
+        float     : none;
+        margin    : 100px auto 0;
+    }
+
+    .img-smart {
+        float  : none;
+        display: none;
+    }
+
+    .texto-secao1 {
+        text-align: center;
+        float     : none;
+        width     : 80%;
+        color     : white;
+        position  : static;
+        margin    : 0 auto;
+    }
+
+    .lista-secao1 {
+        width : 120px;
+        margin: 0 auto;
+    }
+
+    .lista-secao1 ul {
+        text-align: left;
+    }
+
+    .botao-secao1 {
+        max-width       : 330px;
+        display         : block;
+        background-color: #d3913a;
+        color           : white;
+        text-decoration : none;
+        text-align      : center;
+        position        : static;
+        margin          : 20px auto 0;
+        border-radius   : 50px;
+    }
+
+    #menu-hamburguer {
+        display: block;
+    }
+
+    #sobre .direita {
+        padding: 160px 0 0;
+    }
+
+    .titulo-autor {
+        float     : none;
+        width     : 100%;
+        text-align: center;
+    }
+
+    .titulo-autor .pacote-titulo {
+        transform: translateX(80px);
+    }
+
+    .titulo-autor p {
+        font-style: italic;
+        color     : #222;
+    }
+
+    .titulo-autor h2 {
+        margin-top : 10px;
+        color      : #222;
+        font-weight: 500;
+    }
+
+    .titulo-autor .img-autor {
+        float    : none;
+        width    : 100px;
+        height   : 100px;
+        transform: translateX(100px);
+    }
+}
+
+@media screen and (max-width: 620px) {
+    #sobre .esquerda {
+        float: none;
+        width: 100%;
+    }
+
+    .esquerda .pacote-esquerda {
+        width        : 80%;
+        float        : none;
+        padding-right: 35px;
+        padding-left : 10%;
+    }
+
+    #sobre .direita {
+        float  : none;
+        width  : 100%;
+        padding: 20px 0;
+    }
+
+    .scroll-equipe {
+        padding: 0;
+        margin : 0 auto;
+    }
+
+    .carrossel-autor {
+        text-align: center;
+    }
+
+    .titulo-autor .img-autor {
+        width : 150px;
+        height: 150px;
+    }
+
+    .titulo-autor .pacote-titulo {
+        float    : none;
+        transform: none;
+        margin   : 0 auto;
+    }
+
+    .titulo-autor .img-autor {
+        transform: none;
+        margin   : 0 auto;
+    }
+
+    .texto-autor p {
+        width: 100%;
+    }
+
+    .bolinhas {
+        text-align: center;
+        padding   : 10px 0;
+        margin    : 0 auto;
+    }
+
+    .bolinhas span:last-child {
+        margin: 0;
+    }
+
+    #contato {
+        padding: 0;
+    }
+
+    .form {
+        float     : none;
+        width     : 90vw;
+        color     : white;
+        max-width : auto;
+        padding   : 10px 15px 0;
+        text-align: center;
+        margin    : 0 auto;
+    }
+
+    .form h2 {
+        font-size: 23px;
+    }
+
+    .form p {
+        font-size    : 15px;
+        text-align   : justify;
+        margin-bottom: 10px;
+    }
+
+    .form input[type=text] {
+        width : 97%;
+        height: 32px;
+    }
+
+    .form textarea {
+        width: 97%;
+    }
+
+    .pacote-mapa {
+        float         : none;
+        width         : 100%;
+        padding-bottom: 10%;
+        padding-right : 0;
+        text-align    : center;
+    }
+
+    .pacote-mapa h2 {
+        font-size    : 23px;
+        margin-bottom: 10px;
+    }
+
+    .container-mapa {
+        position   : relative;
+        width      : 80%;
+        padding-top: 80%;
+        max-width  : none;
+        margin     : 0 auto;
+    }
+
+    .container-mapa2 {
+        position   : absolute;
+        top        : 0;
+        left       : 0;
+        width      : 100%;
+        height     : 100%;
+        padding-top: 0;
+    }
+
+    .mapa {
+        position        : absolute;
+        top             : 0;
+        left            : 0;
+        width           : 100%;
+        height          : 100%;
+        background-color: white;
+        border          : 5px solid #aaa;
+    }
+}

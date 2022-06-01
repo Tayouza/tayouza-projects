@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html{
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    background-color: #347473;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo a, .logo h1 {
+    font-size: 46px;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
+.logo img {
+    height: 56px;
+}
+
+#dadosCep {
+    width: 300px;
+}
+
+.qsn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background-color: #8fdada;
+}
+
+.qsn h2 {
+    font-family: 'Crafty Girls', cursive;
+    font-size: 74px;
+    line-height: 55px;
+    color: white;
+}
+
+.pesquisa {
+    width: 100%;
+    height: 150px;
+    background-color: #8fdada;
+    display: flex;
+    justify-content: center;
+}
+
+.pesquisa form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.pesquisa form input {
+    width: 680px;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+}
+
+.pesquisa form input:nth-of-type(1) {
+    font-family: 'Crafty Girls', cursive;
+    text-align: center;
+}
+
+.pesquisa form input:nth-of-type(1):focus {
+    outline: 2px solid #d7ecfb;
+}
+
+.pesquisa form input:nth-of-type(2) {
+    background-color: #347473;
+    color: white;
+    cursor: pointer;
+}
+
+.displayChart{
+    margin-top: 15px;
+}
+
+.container-chart {
+    position: relative;
+    padding: 0 5%;
+}
+
+.container-chart .container{
+    flex-direction: column;
+}
+
+.classCharts {
+    opacity: 1;
+    transition: .4s;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    .pesquisa form input {
+        width: 85%;
+    }
+}
